@@ -1,0 +1,17 @@
+<!doctype html>
+<meta charset="utf-8">
+<title>Recorder test app</title>
+<!-- A 300×600 "phone" on a dark page. Tapping the top half turns it blue instantly; the bottom half turns it green. -->
+<style>
+  html, body { margin: 0; height: 100%; background: #111; }
+  #frame { position: absolute; left: 100px; top: 50px; width: 300px; height: 600px; background: #f4f4f4; }
+  #frame.blue { background: #3050e0; }
+  #frame.green { background: #20a060; }
+</style>
+<div id="frame"></div>
+<script>
+  const frame = document.getElementById('frame');
+  frame.addEventListener('mousedown', (e) => {
+    frame.className = e.offsetY < 300 ? 'blue' : 'green';
+  });
+</script>

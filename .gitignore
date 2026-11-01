@@ -1,0 +1,38 @@
+# Dependencies
+node_modules/
+
+# Recordings and exports (large, and may contain third-party designs)
+out/
+takes/
+*.mp4
+*.mov
+*.webm
+*.wav
+*.mp3
+*.zip
+.frames-*/
+*.jpg
+*.png
+!docs/**/*.png
+
+# Credentials, sessions and personal settings — never commit
+.env
+.env.*
+!.env.example
+*.key
+*.pem
+cookies*.json
+storage-state*.json
+auth*.json
+.figma-token
+**/secrets/
+
+# Local configs that point at private prototypes
+examples/**/local.*.mjs
+*.local.mjs
+
+# OS / editor
+.DS_Store
+.idea/
+.vscode/
+*.log
