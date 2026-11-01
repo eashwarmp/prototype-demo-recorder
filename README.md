@@ -81,6 +81,7 @@ src/verify/      contact sheets and before/after tap strips
 src/audit.js     per-tap screen change, drift and failure warnings, environment
 src/run.js       records a config's sections;  src/cli.js  the `pdr` command
 examples/figma-flow/   the Flow demo config, Figma link tracer and overlay fixer
+examples/flow-showcase/ narration-timed showcase: cue timing, shot plan, assembly, QA and audit
 tests/           timing, missing frames, mapping, actions; tests/e2e records a local page
 ```
 

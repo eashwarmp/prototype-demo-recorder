@@ -22,12 +22,18 @@ export function createActions(page, mapping, log, { tapMs = 110, approachMs = 65
   const wait = (ms) => page.waitForTimeout(ms);
   const actions = {
     hold: (seconds) => wait(seconds * 1000),
+    // Paced by the wall clock, not by step count: each mouse move costs real time while the screencast runs, so a
+    // fixed number of steps ran up to twice as long as asked and threw off narration-timed scripts.
     async glide(x, y, ms = 700) {
       const to = mapping.toScreen(x, y);
-      const { points, stepMs } = path(cursor.x, cursor.y, to.x, to.y, ms);
-      for (const p of points) {
-        await page.mouse.move(p.x, p.y);
-        await wait(stepMs);
+      const from = cursor;
+      const start = Date.now();
+      for (;;) {
+        const p = Math.min(1, (Date.now() - start) / ms);
+        const e = easeInOut(p);
+        await page.mouse.move(from.x + (to.x - from.x) * e, from.y + (to.y - from.y) * e);
+        if (p >= 1) break;
+        await wait(8);
       }
       cursor = to;
     },
@@ -43,10 +49,15 @@ export function createActions(page, mapping, log, { tapMs = 110, approachMs = 65
     async scroll(x, y, dy, ms = 1100) {
       await actions.glide(x, y, 400);
       log.add('scroll', { x, y, dy });
-      const steps = Math.max(1, Math.round(ms / 33));
-      for (let i = 0; i < steps; i++) {
-        await page.mouse.wheel(0, (dy * mapping.scale) / steps);
-        await wait(33);
+      // Wall-clock paced, like glide: send what's due so far, so the scroll ends on time.
+      const total = dy * mapping.scale, start = Date.now();
+      let sent = 0;
+      for (;;) {
+        const p = Math.min(1, (Date.now() - start) / ms);
+        const due = total * p - sent;
+        if (due) { await page.mouse.wheel(0, due); sent += due; }
+        if (p >= 1) break;
+        await wait(16);
       }
     },
     note: (text) => log.add('note', { text }),

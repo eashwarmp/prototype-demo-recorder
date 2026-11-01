@@ -1,0 +1,118 @@
+{
+ "output": "output/Flow_Showcase_Michael.mp4",
+ "fps": 30,
+ "duration": 202.96666666666667,
+ "narration": [
+  "micheal_intro.wav",
+  "micheal_request_to_plan.wav",
+  "micheal_permissions.wav",
+  "micheal_executions.wav",
+  "micheal_human_approval.wav",
+  "micheal_reciepts_proof.wav",
+  "micheal_change_the_plan.wav",
+  "micheal_bring_your_own_tools.wav",
+  "micheal_team_wfs.wav",
+  "micheal_product_close.wav"
+ ],
+ "shots": [
+  {
+   "shot": "a_home_to_plan",
+   "figma_node": "111-5055",
+   "slip": 0,
+   "master_from": 0.0,
+   "master_to": 47.6,
+   "take_t0": 1.53,
+   "take_in": 1.53
+  },
+  {
+   "shot": "b_connections",
+   "figma_node": "11-391",
+   "slip": 0,
+   "master_from": 47.6,
+   "master_to": 54.86666666666667,
+   "take_t0": 1.53,
+   "take_in": 1.53
+  },
+  {
+   "shot": "c_run",
+   "figma_node": "8-147",
+   "slip": 0,
+   "master_from": 54.86666666666667,
+   "master_to": 125.13333333333334,
+   "take_t0": 1.53,
+   "take_in": 1.527
+  },
+  {
+   "shot": "d_change_plan",
+   "figma_node": "19-814",
+   "slip": 0.3,
+   "master_from": 125.13333333333334,
+   "master_to": 143.3,
+   "take_t0": 1.53,
+   "take_in": 1.813
+  },
+  {
+   "shot": "e_tools",
+   "figma_node": "85-3125",
+   "slip": 0,
+   "master_from": 143.3,
+   "master_to": 166.33333333333334,
+   "take_t0": 1.53,
+   "take_in": 1.52
+  },
+  {
+   "shot": "f_team",
+   "figma_node": "121-5109",
+   "slip": 0,
+   "master_from": 166.33333333333334,
+   "master_to": 180.46666666666667,
+   "take_t0": 1.53,
+   "take_in": 1.513
+  },
+  {
+   "shot": "g1_call",
+   "figma_node": "115-4882",
+   "slip": 0,
+   "master_from": 180.46666666666667,
+   "master_to": 181.4,
+   "take_t0": 1.53,
+   "take_in": 1.547
+  },
+  {
+   "shot": "g2_sms",
+   "figma_node": "115-4838",
+   "slip": 0,
+   "master_from": 181.4,
+   "master_to": 181.93333333333334,
+   "take_t0": 1.53,
+   "take_in": 1.53
+  },
+  {
+   "shot": "g3_lock",
+   "figma_node": "114-4872",
+   "slip": 0,
+   "master_from": 181.93333333333334,
+   "master_to": 185.3,
+   "take_t0": 1.53,
+   "take_in": 1.513
+  },
+  {
+   "shot": "h_home",
+   "figma_node": "142-5668",
+   "slip": 0,
+   "master_from": 185.3,
+   "master_to": 199.46666666666667,
+   "take_t0": 1.53,
+   "take_in": 1.53
+  },
+  {
+   "shot": "i_welcome",
+   "figma_node": "111-4354",
+   "slip": 0,
+   "master_from": 199.46666666666667,
+   "master_to": 202.96666666666667,
+   "take_t0": 1.53,
+   "take_in": 1.547
+  }
+ ]
+}

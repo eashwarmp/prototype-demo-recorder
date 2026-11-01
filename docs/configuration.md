@@ -29,11 +29,16 @@ All coordinates are design points in `frame`.
 | Verb | What it does | Logged |
 |---|---|---|
 | `hold(seconds)` | Waits. Use 2 s at both ends of a section as editing handles. | no |
-| `glide(x, y, ms = 700)` | Moves the cursor along an eased path. | no |
+| `glide(x, y, ms = 700)` | Moves the cursor along an eased path, paced by the wall clock so it takes `ms` even while the screencast runs. | no |
 | `tap(x, y, settle = 1.5, label)` | Glides there, aims 0.25 s, presses for 110 ms, then waits `settle` s. | `tap` at the press |
 | `scroll(x, y, dy, ms = 1100)` | Moves to (x, y) and scrolls `dy` design points smoothly. | `scroll` |
 | `cue(text)` | Marks a narration line at this moment. | `cue` |
 | `note(text)` | Free-form marker. | `note` |
+| `click(label)` | Presses where the cursor already is, with no approach, so a press can land exactly on a narration cue. | `tap` at the press |
+| `restart(seconds, url)` | Loads `url` (default `config.url`) and waits. After an unfilmed warm-up pass, screens come from cache without first-visit lag. It loads the URL rather than reloading, because Figma keeps the current screen in the page URL. | no |
+
+For narration-timed takes, schedule events against the wall clock from a `cue('T0')` marker: `glide` first, then `click`
+on the cue. See [`examples/flow-showcase`](../examples/flow-showcase/README.md).
 
 ## Tips
 

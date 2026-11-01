@@ -1,0 +1,1078 @@
+{
+ "offsets": [
+  0,
+  18.8,
+  38.72,
+  61.6,
+  82.08,
+  101.28,
+  125.2,
+  143.36,
+  166.4,
+  187.68
+ ],
+ "durations": [
+  18.8,
+  19.92,
+  22.88,
+  20.48,
+  19.2,
+  23.92,
+  18.16,
+  23.04,
+  21.28,
+  12.8
+ ],
+ "cues": {
+  "intro:introducing flow": {
+   "section": "intro",
+   "phrase": "introducing flow",
+   "whisper": 3.36,
+   "dtw": 3.64,
+   "onset": 3.4,
+   "t": 3.4,
+   "master": 3.4,
+   "spread": 0.28
+  },
+  "intro:just tell flow": {
+   "section": "intro",
+   "phrase": "just tell flow",
+   "whisper": 10.26,
+   "dtw": 10.42,
+   "onset": 10.34,
+   "t": 10.34,
+   "master": 10.34,
+   "spread": 0.16
+  },
+  "intro:type it": {
+   "section": "intro",
+   "phrase": "type it",
+   "whisper": 11.84,
+   "dtw": 12.02,
+   "onset": 11.94,
+   "t": 11.94,
+   "master": 11.94,
+   "spread": 0.18
+  },
+  "intro:say it": {
+   "section": "intro",
+   "phrase": "say it",
+   "whisper": 12.45,
+   "dtw": 12.66,
+   "onset": 12.5,
+   "t": 12.5,
+   "master": 12.5,
+   "spread": 0.21
+  },
+  "intro:ready-to-use": {
+   "section": "intro",
+   "phrase": "ready-to-use",
+   "whisper": 14.08,
+   "dtw": 14.18,
+   "onset": 13.92,
+   "t": 14.08,
+   "master": 14.08,
+   "spread": 0.26
+  },
+  "intro:it feels like": {
+   "section": "intro",
+   "phrase": "it feels like",
+   "whisper": 15.56,
+   "dtw": 15.62,
+   "onset": 15.59,
+   "t": 15.59,
+   "master": 15.59,
+   "spread": 0.06
+  },
+  "intro:just flow": {
+   "section": "intro",
+   "phrase": "just flow",
+   "whisper": 18.03,
+   "dtw": 18.2,
+   "onset": 17.82,
+   "t": 18.03,
+   "master": 18.03,
+   "spread": 0.38
+  },
+  "request_to_plan:chasing": {
+   "section": "request_to_plan",
+   "phrase": "chasing",
+   "whisper": 0.05,
+   "dtw": 0.12,
+   "onset": 0.06,
+   "t": 0.06,
+   "master": 18.86,
+   "spread": 0.07
+  },
+  "request_to_plan:handling": {
+   "section": "request_to_plan",
+   "phrase": "handling",
+   "whisper": 1.78,
+   "dtw": 1.96,
+   "onset": 1.78,
+   "t": 1.78,
+   "master": 20.58,
+   "spread": 0.18
+  },
+  "request_to_plan:qualifying": {
+   "section": "request_to_plan",
+   "phrase": "qualifying",
+   "whisper": 3.24,
+   "dtw": 3.68,
+   "onset": 3.39,
+   "t": 3.39,
+   "master": 22.19,
+   "spread": 0.44
+  },
+  "request_to_plan:let's try": {
+   "section": "request_to_plan",
+   "phrase": "let's try",
+   "whisper": 4.96,
+   "dtw": 5.18,
+   "onset": 5.01,
+   "t": 5.01,
+   "master": 23.81,
+   "spread": 0.22
+  },
+  "request_to_plan:try": {
+   "section": "request_to_plan",
+   "phrase": "try",
+   "whisper": 5.36,
+   "dtw": 5.48,
+   "onset": 5.29,
+   "t": 5.36,
+   "master": 24.16,
+   "spread": 0.19
+  },
+  "request_to_plan:we've got": {
+   "section": "request_to_plan",
+   "phrase": "we've got",
+   "whisper": 6.76,
+   "dtw": 6.84,
+   "onset": 6.8,
+   "t": 6.8,
+   "master": 25.6,
+   "spread": 0.08
+  },
+  "request_to_plan:flow lays": {
+   "section": "request_to_plan",
+   "phrase": "flow lays",
+   "whisper": 12.44,
+   "dtw": 12.7,
+   "onset": 12.62,
+   "t": 12.62,
+   "master": 31.42,
+   "spread": 0.26
+  },
+  "request_to_plan:five leads": {
+   "section": "request_to_plan",
+   "phrase": "five leads",
+   "whisper": 13.84,
+   "dtw": 14.1,
+   "onset": 13.65,
+   "t": 13.84,
+   "master": 32.64,
+   "spread": 0.45
+  },
+  "request_to_plan:with the steps": {
+   "section": "request_to_plan",
+   "phrase": "with the steps",
+   "whisper": 15.12,
+   "dtw": 15.22,
+   "onset": 15.16,
+   "t": 15.16,
+   "master": 33.96,
+   "spread": 0.1
+  },
+  "request_to_plan:and before": {
+   "section": "request_to_plan",
+   "phrase": "and before",
+   "whisper": 17.2,
+   "dtw": 17.28,
+   "onset": 17.25,
+   "t": 17.25,
+   "master": 36.05,
+   "spread": 0.08
+  },
+  "request_to_plan:review the plan": {
+   "section": "request_to_plan",
+   "phrase": "review the plan",
+   "whisper": 18.99,
+   "dtw": 19.16,
+   "onset": 18.91,
+   "t": 18.99,
+   "master": 37.79,
+   "spread": 0.25
+  },
+  "permissions:here's something": {
+   "section": "permissions",
+   "phrase": "here's something",
+   "whisper": 0.11,
+   "dtw": 0.18,
+   "onset": 0.12,
+   "t": 0.12,
+   "master": 38.84,
+   "spread": 0.07
+  },
+  "permissions:connecting your": {
+   "section": "permissions",
+   "phrase": "connecting your",
+   "whisper": 3.92,
+   "dtw": 4.08,
+   "onset": 3.94,
+   "t": 3.94,
+   "master": 42.66,
+   "spread": 0.16
+  },
+  "permissions:with flow": {
+   "section": "permissions",
+   "phrase": "with flow",
+   "whisper": 9.2,
+   "dtw": 9.3,
+   "onset": 9.25,
+   "t": 9.25,
+   "master": 47.97,
+   "spread": 0.1
+  },
+  "permissions:individual": {
+   "section": "permissions",
+   "phrase": "individual",
+   "whisper": 10.66,
+   "dtw": 10.8,
+   "onset": 10.61,
+   "t": 10.66,
+   "master": 49.38,
+   "spread": 0.19
+  },
+  "permissions:limit": {
+   "section": "permissions",
+   "phrase": "limit",
+   "whisper": 11.84,
+   "dtw": 12.04,
+   "onset": 11.9,
+   "t": 11.9,
+   "master": 50.62,
+   "spread": 0.2
+  },
+  "permissions:which spreadsheets": {
+   "section": "permissions",
+   "phrase": "which spreadsheets",
+   "whisper": 12.15,
+   "dtw": 12.26,
+   "onset": 12.16,
+   "t": 12.16,
+   "master": 50.88,
+   "spread": 0.11
+  },
+  "permissions:decide": {
+   "section": "permissions",
+   "phrase": "decide",
+   "whisper": 13.8,
+   "dtw": 14.04,
+   "onset": 13.66,
+   "t": 13.8,
+   "master": 52.52,
+   "spread": 0.38
+  },
+  "permissions:slack channels": {
+   "section": "permissions",
+   "phrase": "slack channels",
+   "whisper": 14.53,
+   "dtw": 14.64,
+   "onset": 14.42,
+   "t": 14.53,
+   "master": 53.25,
+   "spread": 0.22
+  },
+  "permissions:post to": {
+   "section": "permissions",
+   "phrase": "post to",
+   "whisper": 15.72,
+   "dtw": 15.46,
+   "onset": 15.77,
+   "t": 15.72,
+   "master": 54.44,
+   "spread": 0.31
+  },
+  "permissions:and when": {
+   "section": "permissions",
+   "phrase": "and when",
+   "whisper": 16.16,
+   "dtw": 16.24,
+   "onset": 16.2,
+   "t": 16.2,
+   "master": 54.92,
+   "spread": 0.08
+  },
+  "permissions:approval": {
+   "section": "permissions",
+   "phrase": "approval",
+   "whisper": 17.4,
+   "dtw": 17.38,
+   "onset": 17.34,
+   "t": 17.38,
+   "master": 56.1,
+   "spread": 0.06
+  },
+  "permissions:your tools": {
+   "section": "permissions",
+   "phrase": "your tools",
+   "whisper": 19.76,
+   "dtw": 19.94,
+   "onset": 19.85,
+   "t": 19.85,
+   "master": 58.57,
+   "spread": 0.18
+  },
+  "executions:let's hit": {
+   "section": "executions",
+   "phrase": "let's hit",
+   "whisper": 0.74,
+   "dtw": 0.8,
+   "onset": 0.73,
+   "t": 0.74,
+   "master": 62.34,
+   "spread": 0.07
+  },
+  "executions:start": {
+   "section": "executions",
+   "phrase": "start",
+   "whisper": 1.33,
+   "dtw": 1.34,
+   "onset": 1.23,
+   "t": 1.33,
+   "master": 62.93,
+   "spread": 0.11
+  },
+  "executions:flow begins": {
+   "section": "executions",
+   "phrase": "flow begins",
+   "whisper": 1.96,
+   "dtw": 2.12,
+   "onset": 2.07,
+   "t": 2.07,
+   "master": 63.67,
+   "spread": 0.16
+  },
+  "executions:see what's happening": {
+   "section": "executions",
+   "phrase": "see what's happening",
+   "whisper": 10.59,
+   "dtw": 10.6,
+   "onset": 10.61,
+   "t": 10.6,
+   "master": 72.2,
+   "spread": 0.02
+  },
+  "executions:open the": {
+   "section": "executions",
+   "phrase": "open the",
+   "whisper": 11.84,
+   "dtw": 11.98,
+   "onset": 11.83,
+   "t": 11.84,
+   "master": 73.44,
+   "spread": 0.15
+  },
+  "executions:call summary": {
+   "section": "executions",
+   "phrase": "call summary",
+   "whisper": 12.27,
+   "dtw": 12.3,
+   "onset": 12.18,
+   "t": 12.27,
+   "master": 73.87,
+   "spread": 0.12
+  },
+  "executions:read the": {
+   "section": "executions",
+   "phrase": "read the",
+   "whisper": 13.12,
+   "dtw": 13.18,
+   "onset": 13.12,
+   "t": 13.12,
+   "master": 74.72,
+   "spread": 0.06
+  },
+  "executions:transcript": {
+   "section": "executions",
+   "phrase": "transcript",
+   "whisper": 13.88,
+   "dtw": 13.68,
+   "onset": 14.02,
+   "t": 13.88,
+   "master": 75.48,
+   "spread": 0.34
+  },
+  "executions:see what flow": {
+   "section": "executions",
+   "phrase": "see what flow",
+   "whisper": 14.38,
+   "dtw": 14.48,
+   "onset": 14.18,
+   "t": 14.38,
+   "master": 75.98,
+   "spread": 0.3
+  },
+  "executions:no mysterious": {
+   "section": "executions",
+   "phrase": "no mysterious",
+   "whisper": 17.04,
+   "dtw": 17.18,
+   "onset": 17.02,
+   "t": 17.04,
+   "master": 78.64,
+   "spread": 0.16
+  },
+  "executions:clear record": {
+   "section": "executions",
+   "phrase": "clear record",
+   "whisper": 19.15,
+   "dtw": 19.32,
+   "onset": 19.01,
+   "t": 19.15,
+   "master": 80.75,
+   "spread": 0.31
+  },
+  "human_approval:here, flow": {
+   "section": "human_approval",
+   "phrase": "here, flow",
+   "whisper": 3.16,
+   "dtw": 3.4,
+   "onset": 3.23,
+   "t": 3.23,
+   "master": 85.31,
+   "spread": 0.24
+  },
+  "human_approval:qualified": {
+   "section": "human_approval",
+   "phrase": "qualified",
+   "whisper": 4.52,
+   "dtw": 4.88,
+   "onset": 4.54,
+   "t": 4.54,
+   "master": 86.62,
+   "spread": 0.36
+  },
+  "human_approval:ready to add": {
+   "section": "human_approval",
+   "phrase": "ready to add",
+   "whisper": 5.83,
+   "dtw": 5.86,
+   "onset": 5.79,
+   "t": 5.83,
+   "master": 87.91,
+   "spread": 0.07
+  },
+  "human_approval:but before": {
+   "section": "human_approval",
+   "phrase": "but before",
+   "whisper": 7.84,
+   "dtw": 7.9,
+   "onset": 7.87,
+   "t": 7.87,
+   "master": 89.95,
+   "spread": 0.06
+  },
+  "human_approval:change,": {
+   "section": "human_approval",
+   "phrase": "change,",
+   "whisper": 9.07,
+   "dtw": 9.2,
+   "onset": 8.9,
+   "t": 9.07,
+   "master": 91.15,
+   "spread": 0.3
+  },
+  "human_approval:it asks": {
+   "section": "human_approval",
+   "phrase": "it asks",
+   "whisper": 9.6,
+   "dtw": 9.72,
+   "onset": 9.65,
+   "t": 9.65,
+   "master": 91.73,
+   "spread": 0.12
+  },
+  "human_approval:inspect": {
+   "section": "human_approval",
+   "phrase": "inspect",
+   "whisper": 11.12,
+   "dtw": 11.28,
+   "onset": 11.27,
+   "t": 11.27,
+   "master": 93.35,
+   "spread": 0.16
+  },
+  "human_approval:approve the": {
+   "section": "human_approval",
+   "phrase": "approve the",
+   "whisper": 12.32,
+   "dtw": 12.48,
+   "onset": 12.33,
+   "t": 12.33,
+   "master": 94.41,
+   "spread": 0.16
+  },
+  "human_approval:decline": {
+   "section": "human_approval",
+   "phrase": "decline",
+   "whisper": 13.47,
+   "dtw": 13.7,
+   "onset": 13.39,
+   "t": 13.47,
+   "master": 95.55,
+   "spread": 0.31
+  },
+  "human_approval:one tap": {
+   "section": "human_approval",
+   "phrase": "one tap",
+   "whisper": 14.32,
+   "dtw": 14.5,
+   "onset": 14.41,
+   "t": 14.41,
+   "master": 96.49,
+   "spread": 0.18
+  },
+  "human_approval:tap": {
+   "section": "human_approval",
+   "phrase": "tap",
+   "whisper": 14.57,
+   "dtw": 14.74,
+   "onset": 14.41,
+   "t": 14.57,
+   "master": 96.65,
+   "spread": 0.33
+  },
+  "human_approval:flow continues": {
+   "section": "human_approval",
+   "phrase": "flow continues",
+   "whisper": 15.07,
+   "dtw": 15.4,
+   "onset": 15.11,
+   "t": 15.11,
+   "master": 97.19,
+   "spread": 0.33
+  },
+  "human_approval:completed": {
+   "section": "human_approval",
+   "phrase": "completed",
+   "whisper": 16.46,
+   "dtw": 16.66,
+   "onset": 16.52,
+   "t": 16.52,
+   "master": 98.6,
+   "spread": 0.2
+  },
+  "human_approval:you're still": {
+   "section": "human_approval",
+   "phrase": "you're still",
+   "whisper": 17.56,
+   "dtw": 17.64,
+   "onset": 17.63,
+   "t": 17.63,
+   "master": 99.71,
+   "spread": 0.08
+  },
+  "reciepts_proof:here's another": {
+   "section": "reciepts_proof",
+   "phrase": "here's another",
+   "whisper": 3.16,
+   "dtw": 3.26,
+   "onset": 3.22,
+   "t": 3.22,
+   "master": 104.5,
+   "spread": 0.1
+  },
+  "reciepts_proof:invoice": {
+   "section": "reciepts_proof",
+   "phrase": "invoice",
+   "whisper": 4.74,
+   "dtw": 4.76,
+   "onset": 4.64,
+   "t": 4.74,
+   "master": 106.02,
+   "spread": 0.12
+  },
+  "reciepts_proof:follow-up": {
+   "section": "reciepts_proof",
+   "phrase": "follow-up",
+   "whisper": 5.25,
+   "dtw": 5.18,
+   "onset": 5.13,
+   "t": 5.18,
+   "master": 106.46,
+   "spread": 0.12
+  },
+  "reciepts_proof:green": {
+   "section": "reciepts_proof",
+   "phrase": "green",
+   "whisper": 7.37,
+   "dtw": 7.44,
+   "onset": 7.38,
+   "t": 7.38,
+   "master": 108.66,
+   "spread": 0.07
+  },
+  "reciepts_proof:why a": {
+   "section": "reciepts_proof",
+   "phrase": "why a",
+   "whisper": 8.96,
+   "dtw": 9.12,
+   "onset": 9.01,
+   "t": 9.01,
+   "master": 110.29,
+   "spread": 0.16
+  },
+  "reciepts_proof:which values": {
+   "section": "reciepts_proof",
+   "phrase": "which values",
+   "whisper": 10.42,
+   "dtw": 10.54,
+   "onset": 10.47,
+   "t": 10.47,
+   "master": 111.75,
+   "spread": 0.12
+  },
+  "reciepts_proof:who approved": {
+   "section": "reciepts_proof",
+   "phrase": "who approved",
+   "whisper": 11.96,
+   "dtw": 12.14,
+   "onset": 11.78,
+   "t": 11.96,
+   "master": 113.24,
+   "spread": 0.36
+  },
+  "reciepts_proof:accepted": {
+   "section": "reciepts_proof",
+   "phrase": "accepted",
+   "whisper": 14.7,
+   "dtw": 14.98,
+   "onset": 14.76,
+   "t": 14.76,
+   "master": 116.04,
+   "spread": 0.28
+  },
+  "reciepts_proof:put things": {
+   "section": "reciepts_proof",
+   "phrase": "put things",
+   "whisper": 17.31,
+   "dtw": 17.3,
+   "onset": 17.23,
+   "t": 17.3,
+   "master": 118.58,
+   "spread": 0.08
+  },
+  "reciepts_proof:back,": {
+   "section": "reciepts_proof",
+   "phrase": "back,",
+   "whisper": 17.88,
+   "dtw": 17.8,
+   "onset": 17.95,
+   "t": 17.88,
+   "master": 119.16,
+   "spread": 0.15
+  },
+  "reciepts_proof:approval step": {
+   "section": "reciepts_proof",
+   "phrase": "approval step",
+   "whisper": 18.66,
+   "dtw": 18.68,
+   "onset": 18.6,
+   "t": 18.66,
+   "master": 119.94,
+   "spread": 0.08
+  },
+  "reciepts_proof:accountability": {
+   "section": "reciepts_proof",
+   "phrase": "accountability",
+   "whisper": 20.87,
+   "dtw": 21.38,
+   "onset": 20.93,
+   "t": 20.9,
+   "master": 122.18,
+   "spread": 0.06
+  },
+  "change_the_plan:plans change": {
+   "section": "change_the_plan",
+   "phrase": "plans change",
+   "whisper": 1.24,
+   "dtw": 1.32,
+   "onset": 1.13,
+   "t": 1.24,
+   "master": 126.44,
+   "spread": 0.19
+  },
+  "change_the_plan:customer": {
+   "section": "change_the_plan",
+   "phrase": "customer",
+   "whisper": 2.78,
+   "dtw": 2.96,
+   "onset": 2.74,
+   "t": 2.78,
+   "master": 127.98,
+   "spread": 0.22
+  },
+  "change_the_plan:more time": {
+   "section": "change_the_plan",
+   "phrase": "more time",
+   "whisper": 5.97,
+   "dtw": 5.84,
+   "onset": 5.96,
+   "t": 5.96,
+   "master": 131.16,
+   "spread": 0.13
+  },
+  "change_the_plan:tell flow": {
+   "section": "change_the_plan",
+   "phrase": "tell flow",
+   "whisper": 6.66,
+   "dtw": 6.86,
+   "onset": 6.72,
+   "t": 6.72,
+   "master": 131.92,
+   "spread": 0.2
+  },
+  "change_the_plan:leaving": {
+   "section": "change_the_plan",
+   "phrase": "leaving",
+   "whisper": 9.27,
+   "dtw": 9.48,
+   "onset": 9.21,
+   "t": 9.27,
+   "master": 134.47,
+   "spread": 0.27
+  },
+  "change_the_plan:extending": {
+   "section": "change_the_plan",
+   "phrase": "extending",
+   "whisper": 10.75,
+   "dtw": 11.0,
+   "onset": 10.66,
+   "t": 10.75,
+   "master": 135.95,
+   "spread": 0.34
+  },
+  "change_the_plan:the updated": {
+   "section": "change_the_plan",
+   "phrase": "the updated",
+   "whisper": 13.3,
+   "dtw": 13.42,
+   "onset": 13.37,
+   "t": 13.37,
+   "master": 138.57,
+   "spread": 0.12
+  },
+  "change_the_plan:both changes": {
+   "section": "change_the_plan",
+   "phrase": "both changes",
+   "whisper": 14.63,
+   "dtw": 14.66,
+   "onset": 14.59,
+   "t": 14.63,
+   "master": 139.83,
+   "spread": 0.07
+  },
+  "change_the_plan:undo": {
+   "section": "change_the_plan",
+   "phrase": "undo",
+   "whisper": 16.19,
+   "dtw": 16.3,
+   "onset": null,
+   "t": 16.25,
+   "master": 141.45,
+   "spread": 0.11
+  },
+  "bring_your_own_tools:here's a": {
+   "section": "bring_your_own_tools",
+   "phrase": "here's a",
+   "whisper": 3.36,
+   "dtw": 3.52,
+   "onset": 3.41,
+   "t": 3.41,
+   "master": 146.77,
+   "spread": 0.16
+  },
+  "bring_your_own_tools:flow identifies": {
+   "section": "bring_your_own_tools",
+   "phrase": "flow identifies",
+   "whisper": 4.86,
+   "dtw": 5.08,
+   "onset": 4.89,
+   "t": 4.89,
+   "master": 148.25,
+   "spread": 0.22
+  },
+  "bring_your_own_tools:gives you": {
+   "section": "bring_your_own_tools",
+   "phrase": "gives you",
+   "whisper": 7.26,
+   "dtw": 7.38,
+   "onset": 7.14,
+   "t": 7.26,
+   "master": 150.62,
+   "spread": 0.24
+  },
+  "bring_your_own_tools:already": {
+   "section": "bring_your_own_tools",
+   "phrase": "already",
+   "whisper": 9.01,
+   "dtw": 9.2,
+   "onset": 8.96,
+   "t": 9.01,
+   "master": 152.37,
+   "spread": 0.24
+  },
+  "bring_your_own_tools:mcp": {
+   "section": "bring_your_own_tools",
+   "phrase": "mcp",
+   "whisper": 11.2,
+   "dtw": 10.96,
+   "onset": 11.25,
+   "t": 11.2,
+   "master": 154.56,
+   "spread": 0.29
+  },
+  "bring_your_own_tools:then you": {
+   "section": "bring_your_own_tools",
+   "phrase": "then you",
+   "whisper": 12.36,
+   "dtw": 12.62,
+   "onset": 12.48,
+   "t": 12.48,
+   "master": 155.84,
+   "spread": 0.26
+  },
+  "bring_your_own_tools:actions": {
+   "section": "bring_your_own_tools",
+   "phrase": "actions",
+   "whisper": 13.64,
+   "dtw": 13.7,
+   "onset": 13.64,
+   "t": 13.64,
+   "master": 157.0,
+   "spread": 0.06
+  },
+  "bring_your_own_tools:creating": {
+   "section": "bring_your_own_tools",
+   "phrase": "creating",
+   "whisper": 14.88,
+   "dtw": 15.2,
+   "onset": 15.01,
+   "t": 15.01,
+   "master": 158.37,
+   "spread": 0.32
+  },
+  "bring_your_own_tools:with approval": {
+   "section": "bring_your_own_tools",
+   "phrase": "with approval",
+   "whisper": 17.16,
+   "dtw": 17.44,
+   "onset": 17.33,
+   "t": 17.33,
+   "master": 160.69,
+   "spread": 0.28
+  },
+  "bring_your_own_tools:refunding": {
+   "section": "bring_your_own_tools",
+   "phrase": "refunding",
+   "whisper": 18.28,
+   "dtw": 18.46,
+   "onset": 18.37,
+   "t": 18.37,
+   "master": 161.73,
+   "spread": 0.18
+  },
+  "bring_your_own_tools:stays off": {
+   "section": "bring_your_own_tools",
+   "phrase": "stays off",
+   "whisper": 19.97,
+   "dtw": 20.04,
+   "onset": 19.95,
+   "t": 19.97,
+   "master": 163.33,
+   "spread": 0.09
+  },
+  "bring_your_own_tools:and the updated": {
+   "section": "bring_your_own_tools",
+   "phrase": "and the updated",
+   "whisper": 20.8,
+   "dtw": 20.92,
+   "onset": 20.86,
+   "t": 20.86,
+   "master": 164.22,
+   "spread": 0.12
+  },
+  "bring_your_own_tools:ready to go": {
+   "section": "bring_your_own_tools",
+   "phrase": "ready to go",
+   "whisper": 22.18,
+   "dtw": 22.3,
+   "onset": 22.26,
+   "t": 22.26,
+   "master": 165.62,
+   "spread": 0.12
+  },
+  "team_wfs:flow can organize": {
+   "section": "team_wfs",
+   "phrase": "flow can organize",
+   "whisper": 3.1,
+   "dtw": 3.3,
+   "onset": 3.21,
+   "t": 3.21,
+   "master": 169.61,
+   "spread": 0.2
+  },
+  "team_wfs:entire team": {
+   "section": "team_wfs",
+   "phrase": "entire team",
+   "whisper": 5.49,
+   "dtw": 5.3,
+   "onset": 5.68,
+   "t": 5.49,
+   "master": 171.89,
+   "spread": 0.38
+  },
+  "team_wfs:six drivers": {
+   "section": "team_wfs",
+   "phrase": "six drivers",
+   "whisper": 6.95,
+   "dtw": 7.22,
+   "onset": 7.06,
+   "t": 7.06,
+   "master": 173.46,
+   "spread": 0.27
+  },
+  "team_wfs:one needs": {
+   "section": "team_wfs",
+   "phrase": "one needs",
+   "whisper": 10.56,
+   "dtw": 10.7,
+   "onset": 10.6,
+   "t": 10.6,
+   "master": 177.0,
+   "spread": 0.14
+  },
+  "team_wfs:clearer": {
+   "section": "team_wfs",
+   "phrase": "clearer",
+   "whisper": 11.13,
+   "dtw": 11.3,
+   "onset": 11.17,
+   "t": 11.17,
+   "master": 177.57,
+   "spread": 0.17
+  },
+  "team_wfs:others": {
+   "section": "team_wfs",
+   "phrase": "others",
+   "whisper": 12.32,
+   "dtw": 12.5,
+   "onset": 12.35,
+   "t": 12.35,
+   "master": 178.75,
+   "spread": 0.18
+  },
+  "team_wfs:calls": {
+   "section": "team_wfs",
+   "phrase": "calls",
+   "whisper": 14.54,
+   "dtw": 14.52,
+   "onset": 14.43,
+   "t": 14.52,
+   "master": 180.92,
+   "spread": 0.11
+  },
+  "team_wfs:texts": {
+   "section": "team_wfs",
+   "phrase": "texts",
+   "whisper": 14.97,
+   "dtw": 15.12,
+   "onset": 15.02,
+   "t": 15.02,
+   "master": 181.42,
+   "spread": 0.15
+  },
+  "team_wfs:notifications": {
+   "section": "team_wfs",
+   "phrase": "notifications",
+   "whisper": 15.59,
+   "dtw": 15.82,
+   "onset": 15.89,
+   "t": 15.82,
+   "master": 182.22,
+   "spread": 0.3
+  },
+  "team_wfs:one place": {
+   "section": "team_wfs",
+   "phrase": "one place",
+   "whisper": 18.9,
+   "dtw": 19.04,
+   "onset": 18.99,
+   "t": 18.99,
+   "master": 185.39,
+   "spread": 0.14
+  },
+  "product_close:real work": {
+   "section": "product_close",
+   "phrase": "real work",
+   "whisper": 4.63,
+   "dtw": 4.42,
+   "onset": 4.77,
+   "t": 4.63,
+   "master": 192.31,
+   "spread": 0.35
+  },
+  "product_close:you decide": {
+   "section": "product_close",
+   "phrase": "you decide",
+   "whisper": 5.78,
+   "dtw": 6.02,
+   "onset": 5.84,
+   "t": 5.84,
+   "master": 193.52,
+   "spread": 0.24
+  },
+  "product_close:flow helps": {
+   "section": "product_close",
+   "phrase": "flow helps",
+   "whisper": 7.76,
+   "dtw": 8.04,
+   "onset": 7.82,
+   "t": 7.82,
+   "master": 195.5,
+   "spread": 0.28
+  },
+  "product_close:coordinate": {
+   "section": "product_close",
+   "phrase": "coordinate",
+   "whisper": 8.48,
+   "dtw": 8.96,
+   "onset": 8.41,
+   "t": 8.48,
+   "master": 196.16,
+   "spread": 0.55
+  },
+  "product_close:stay in charge": {
+   "section": "product_close",
+   "phrase": "stay in charge",
+   "whisper": 10.53,
+   "dtw": 10.64,
+   "onset": 10.62,
+   "t": 10.62,
+   "master": 198.3,
+   "spread": 0.11
+  },
+  "product_close:that's flow": {
+   "section": "product_close",
+   "phrase": "that's flow",
+   "whisper": 11.8,
+   "dtw": 12.02,
+   "onset": 11.83,
+   "t": 11.83,
+   "master": 199.51,
+   "spread": 0.22
+  }
+ }
+}

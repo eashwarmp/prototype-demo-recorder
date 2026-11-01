@@ -7,13 +7,25 @@ takes/
 *.mp4
 *.mov
 *.webm
-*.wav
-*.mp3
 *.zip
 .frames-*/
 *.jpg
 *.png
 !docs/**/*.png
+
+# Audio (narration and voice-overs) — never commit
+*.wav
+*.mp3
+*.aac
+*.m4a
+*.flac
+*.ogg
+*.oga
+*.opus
+*.aif
+*.aiff
+*.wma
+*.caf
 
 # Credentials, sessions and personal settings — never commit
 .env

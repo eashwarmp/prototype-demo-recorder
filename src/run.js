@@ -35,6 +35,22 @@ export async function record(config, { outDir = 'out', only, debug = false, log 
     const actionLog = createActionLog();
     const actions = createActions(page, mapping, actionLog, config.timing);
     actions.cue = (text) => actionLog.add('cue', { text });
+    // After an unfilmed warm-up pass: start the prototype over with its screens already cached (no first-visit lag).
+    // Loads config.url again rather than reloading: Figma keeps the current screen in the page URL.
+    actions.restart = async (seconds = config.loadSeconds ?? 12, url = config.url) => {
+      await page.goto(url, { waitUntil: 'domcontentloaded', timeout: 60_000 });
+      await page.waitForTimeout(seconds * 1000);
+      await installCursor(page, config.cursor);
+      await page.mouse.move(actions.cursor.x, actions.cursor.y);
+    };
+    // Press where the cursor already is, so a press can land exactly on a narration cue (tap() includes its approach).
+    actions.click = async (label = '') => {
+      const at = mapping.toDesign(actions.cursor.x, actions.cursor.y);
+      actionLog.add('tap', { label, x: +at.x.toFixed(1), y: +at.y.toFixed(1) });
+      await page.mouse.down();
+      await page.waitForTimeout(110);
+      await page.mouse.up();
+    };
     await page.mouse.move(actions.cursor.x, actions.cursor.y);
     const crop = mapping.crop(config.frame.width, config.frame.height);
     const size = config.output ?? { width: config.frame.width * 2, height: config.frame.height * 2 };

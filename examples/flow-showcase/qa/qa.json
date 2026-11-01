@@ -1,0 +1,522 @@
+{
+ "interactions": [
+  {
+   "shot": "a_home_to_plan",
+   "label": "Qualify new leads",
+   "press": 24.16,
+   "response": 24.4,
+   "latency": 0.24,
+   "cue": "request_to_plan:try",
+   "cue_time": 24.21,
+   "cue_source": "window-verified",
+   "expect": "request filled in after \"Let's try that last one\"",
+   "visible_vs_cue": 0.19,
+   "verdict": "PASS"
+  },
+  {
+   "shot": "a_home_to_plan",
+   "label": "Send",
+   "press": 30.92,
+   "response": 31.1,
+   "latency": 0.18,
+   "cue": "request_to_plan:flow lays",
+   "cue_time": 31.36,
+   "cue_source": "window-verified",
+   "expect": "plan on \"Flow lays out the work\"",
+   "visible_vs_cue": -0.26,
+   "verdict": "PASS"
+  },
+  {
+   "shot": "a_home_to_plan",
+   "label": "Start (asks for a CRM)",
+   "press": 39.39,
+   "response": 39.6,
+   "latency": 0.21,
+   "cue": "permissions:connecting your",
+   "cue_time": 42.66,
+   "cue_source": "whisper/dtw/onset",
+   "expect": "HubSpot permission sheet on \"Connecting your business tools\"",
+   "visible_vs_cue": -3.06,
+   "verdict": "PASS"
+  },
+  {
+   "shot": "b_connections",
+   "label": "Search inbox off",
+   "press": 49.36,
+   "response": 49.5,
+   "latency": 0.14,
+   "cue": "permissions:individual",
+   "cue_time": 49.52,
+   "cue_source": "window-verified",
+   "expect": "tile toggles on \"individual actions\"",
+   "visible_vs_cue": -0.02,
+   "verdict": "PASS"
+  },
+  {
+   "shot": "b_connections",
+   "label": "Google Sheets",
+   "press": 50.47,
+   "response": 50.7,
+   "latency": 0.23,
+   "cue": "permissions:which spreadsheets",
+   "cue_time": 50.96,
+   "cue_source": "window-verified",
+   "expect": "spreadsheet limits on \"limit which spreadsheets\"",
+   "visible_vs_cue": -0.26,
+   "verdict": "PASS"
+  },
+  {
+   "shot": "b_connections",
+   "label": "Slack",
+   "press": 53.2,
+   "response": 53.4,
+   "latency": 0.2,
+   "cue": "permissions:slack channels",
+   "cue_time": 53.22,
+   "cue_source": "window-verified",
+   "expect": "Slack channels on \"which Slack channels\"",
+   "visible_vs_cue": 0.18,
+   "verdict": "PASS"
+  },
+  {
+   "shot": "b_connections",
+   "label": "scheduler",
+   "note": "late 0.17s: approach Search inbox off"
+  },
+  {
+   "shot": "b_connections",
+   "label": "scheduler",
+   "note": "late 0.23s: approach Slack"
+  },
+  {
+   "shot": "b_connections",
+   "label": "scheduler",
+   "note": "late 0.10s: Slack"
+  },
+  {
+   "shot": "c_run",
+   "label": "Connect HubSpot",
+   "press": 58.58,
+   "response": 58.8,
+   "latency": 0.22,
+   "cue": "permissions:your tools",
+   "cue_time": 58.65,
+   "cue_source": "window-verified",
+   "expect": "HubSpot connected on \"Your tools, your permissions\"",
+   "visible_vs_cue": 0.15,
+   "verdict": "PASS"
+  },
+  {
+   "shot": "c_run",
+   "label": "Start",
+   "press": 62.94,
+   "response": 63.2,
+   "latency": 0.26,
+   "cue": "executions:flow begins",
+   "cue_time": 63.67,
+   "cue_source": "whisper/dtw/onset",
+   "expect": "live run on \"Flow begins working\"",
+   "visible_vs_cue": -0.47,
+   "verdict": "PASS"
+  },
+  {
+   "shot": "c_run",
+   "label": "Call summary",
+   "press": 73.63,
+   "response": 73.9,
+   "latency": 0.27,
+   "cue": "executions:call summary",
+   "cue_time": 73.81,
+   "cue_source": "window-verified",
+   "expect": "summary on \"Open the call summary\"",
+   "visible_vs_cue": 0.09,
+   "verdict": "PASS"
+  },
+  {
+   "shot": "c_run",
+   "label": "Transcript",
+   "press": 74.75,
+   "response": 75.0,
+   "latency": 0.25,
+   "cue": "executions:transcript",
+   "cue_time": 75.03,
+   "cue_source": "window-verified",
+   "expect": "transcript on \"read the transcript\"",
+   "visible_vs_cue": -0.03,
+   "verdict": "PASS"
+  },
+  {
+   "shot": "c_run",
+   "label": "Close transcript",
+   "press": 78.65,
+   "response": 78.8,
+   "latency": 0.15,
+   "cue": "executions:no mysterious",
+   "cue_time": 78.75,
+   "cue_source": "window-verified",
+   "expect": "run record on \"No mysterious black box\"",
+   "visible_vs_cue": 0.05,
+   "verdict": "PASS"
+  },
+  {
+   "shot": "c_run",
+   "label": "Needs you \u00b7 HubSpot",
+   "press": 89.96,
+   "response": 90.2,
+   "latency": 0.24,
+   "cue": "human_approval:but before",
+   "cue_time": 89.98,
+   "cue_source": "window-verified",
+   "expect": "approval sheet on \"before it makes that change, it asks\"",
+   "visible_vs_cue": 0.22,
+   "verdict": "PASS"
+  },
+  {
+   "shot": "c_run",
+   "label": "Approve",
+   "press": 96.66,
+   "response": 96.9,
+   "latency": 0.24,
+   "cue": "human_approval:flow continues",
+   "cue_time": 97.44,
+   "cue_source": "window-verified",
+   "expect": "completed result on \"Flow continues to the completed result\"",
+   "visible_vs_cue": -0.54,
+   "verdict": "PASS"
+  },
+  {
+   "shot": "c_run",
+   "label": "History",
+   "press": 104.51,
+   "response": 104.7,
+   "latency": 0.19,
+   "cue": "reciepts_proof:here's another",
+   "cue_time": 104.61,
+   "cue_source": "window-verified",
+   "expect": "History on \"Here's another example\"",
+   "visible_vs_cue": 0.09,
+   "verdict": "PASS"
+  },
+  {
+   "shot": "c_run",
+   "label": "Wrote 2 dates to Invoices",
+   "press": 106.47,
+   "response": 106.7,
+   "latency": 0.23,
+   "cue": "reciepts_proof:follow-up",
+   "cue_time": 106.43,
+   "cue_source": "window-verified",
+   "expect": "invoice receipt on \"from an invoice follow-up\"",
+   "visible_vs_cue": 0.27,
+   "verdict": "PASS"
+  },
+  {
+   "shot": "c_run",
+   "label": "Undo \u00b7 put the old values back",
+   "press": 119.01,
+   "response": 119.3,
+   "latency": 0.29,
+   "cue": "reciepts_proof:approval step",
+   "cue_time": 119.91,
+   "cue_source": "window-verified",
+   "expect": "undo approval on \"an approval step for that too\"",
+   "visible_vs_cue": -0.61,
+   "verdict": "PASS"
+  },
+  {
+   "shot": "c_run",
+   "label": "scheduler",
+   "note": "late 0.10s: approach Wrote 2 dates to Invoices"
+  },
+  {
+   "shot": "c_run",
+   "label": "scheduler",
+   "note": "late 0.09s: glide 150,485"
+  },
+  {
+   "shot": "d_change_plan",
+   "label": "Change composer",
+   "press": 131.62,
+   "response": 132.0,
+   "latency": 0.38,
+   "cue": "change_the_plan:tell flow",
+   "cue_time": 131.95,
+   "cue_source": "window-verified",
+   "expect": "change box on \"Tell Flow what needs to change\"",
+   "visible_vs_cue": 0.05,
+   "verdict": "PASS"
+  },
+  {
+   "shot": "d_change_plan",
+   "label": "Send change",
+   "press": 138.07,
+   "response": 138.3,
+   "latency": 0.23,
+   "cue": "change_the_plan:the updated",
+   "cue_time": 138.91,
+   "cue_source": "window-verified",
+   "expect": "updated plan on \"The updated plan shows both changes\"",
+   "visible_vs_cue": -0.61,
+   "verdict": "PASS"
+  },
+  {
+   "shot": "e_tools",
+   "label": "Step 6 needs a billing tool",
+   "press": 148.0,
+   "response": 148.3,
+   "latency": 0.3,
+   "cue": "bring_your_own_tools:flow identifies",
+   "cue_time": 148.33,
+   "cue_source": "window-verified",
+   "expect": "missing tool on \"Flow identifies the missing capability\"",
+   "visible_vs_cue": -0.03,
+   "verdict": "PASS"
+  },
+  {
+   "shot": "e_tools",
+   "label": "Use your own tool",
+   "press": 151.91,
+   "response": 152.6,
+   "latency": 0.69,
+   "cue": "bring_your_own_tools:already",
+   "cue_time": 152.42,
+   "cue_source": "window-verified",
+   "expect": "MCP link form on \"the tool you already use\"",
+   "visible_vs_cue": 0.18,
+   "verdict": "PASS"
+  },
+  {
+   "shot": "e_tools",
+   "label": "Continue to sign in",
+   "press": 153.91,
+   "response": 154.2,
+   "latency": 0.29
+  },
+  {
+   "shot": "e_tools",
+   "label": "Continue",
+   "press": 154.61,
+   "response": 154.9,
+   "latency": 0.29
+  },
+  {
+   "shot": "e_tools",
+   "label": "Allow",
+   "press": 155.41,
+   "response": 155.7,
+   "latency": 0.29,
+   "cue": "bring_your_own_tools:then you",
+   "cue_time": 155.84,
+   "cue_source": "whisper/dtw/onset",
+   "expect": "tool actions on \"Then you choose the actions\"",
+   "visible_vs_cue": -0.14,
+   "verdict": "PASS"
+  },
+  {
+   "shot": "e_tools",
+   "label": "Use for step 6",
+   "press": 164.07,
+   "response": 164.4,
+   "latency": 0.33,
+   "cue": "bring_your_own_tools:and the updated",
+   "cue_time": 164.27,
+   "cue_source": "window-verified",
+   "expect": "updated plan on \"And the updated plan is ready to go\"",
+   "visible_vs_cue": 0.13,
+   "verdict": "PASS"
+  },
+  {
+   "shot": "f_team",
+   "label": "Review (Marco)",
+   "press": 177.3,
+   "response": 177.6,
+   "latency": 0.3,
+   "cue": "team_wfs:clearer",
+   "cue_time": 177.62,
+   "cue_source": "window-verified",
+   "expect": "Marco approval on \"One needs a clearer document\"",
+   "visible_vs_cue": -0.02,
+   "verdict": "PASS"
+  },
+  {
+   "shot": "f_team",
+   "label": "Send text",
+   "press": 178.45,
+   "response": 178.7,
+   "latency": 0.25,
+   "cue": "team_wfs:others",
+   "cue_time": 178.83,
+   "cue_source": "window-verified",
+   "expect": "team list on \"Others are still moving forward\"",
+   "visible_vs_cue": -0.13,
+   "verdict": "PASS"
+  }
+ ],
+ "cuts": [
+  {
+   "cut_at": 47.6,
+   "into": "b_connections",
+   "cue": "permissions:with flow",
+   "cue_time": 47.97,
+   "lead": 0.37,
+   "verdict": "PASS"
+  },
+  {
+   "cut_at": 54.86666666666667,
+   "into": "c_run",
+   "cue": "permissions:and when",
+   "cue_time": 54.92,
+   "lead": 0.05,
+   "verdict": "PASS"
+  },
+  {
+   "cut_at": 125.13333333333334,
+   "into": "d_change_plan",
+   "cue": 125.29,
+   "cue_time": 125.29,
+   "lead": 0.16,
+   "verdict": "PASS"
+  },
+  {
+   "cut_at": 143.3,
+   "into": "e_tools",
+   "cue": 143.42,
+   "cue_time": 143.42,
+   "lead": 0.12,
+   "verdict": "PASS"
+  },
+  {
+   "cut_at": 166.33333333333334,
+   "into": "f_team",
+   "cue": 166.43,
+   "cue_time": 166.43,
+   "lead": 0.1,
+   "verdict": "PASS"
+  },
+  {
+   "cut_at": 180.46666666666667,
+   "into": "g1_call",
+   "cue": "team_wfs:calls",
+   "cue_time": 180.92,
+   "lead": 0.45,
+   "verdict": "PASS"
+  },
+  {
+   "cut_at": 181.4,
+   "into": "g2_sms",
+   "cue": "team_wfs:texts",
+   "cue_time": 181.5,
+   "lead": 0.1,
+   "verdict": "PASS"
+  },
+  {
+   "cut_at": 181.93333333333334,
+   "into": "g3_lock",
+   "cue": "team_wfs:notifications",
+   "cue_time": 182.05,
+   "lead": 0.12,
+   "verdict": "PASS"
+  },
+  {
+   "cut_at": 185.3,
+   "into": "h_home",
+   "cue": "team_wfs:one place",
+   "cue_time": 185.44,
+   "lead": 0.14,
+   "verdict": "PASS"
+  },
+  {
+   "cut_at": 199.46666666666667,
+   "into": "i_welcome",
+   "cue": "product_close:that's flow",
+   "cue_time": 199.71,
+   "lead": 0.24,
+   "verdict": "PASS"
+  }
+ ],
+ "technical": {
+  "video": {
+   "codec": "h264",
+   "size": "780x1688",
+   "fps": "30/1",
+   "duration": 203.0
+  },
+  "audio": {
+   "codec": "aac",
+   "rate": "48000",
+   "duration": 202.966708
+  },
+  "narration_end": 200.48,
+  "last_word_end": 200.4,
+  "black_runs": [],
+  "section_offsets": [
+   {
+    "section": "intro",
+    "expected": 0,
+    "measured": 0.0,
+    "offset": 0.0
+   },
+   {
+    "section": "request_to_plan",
+    "expected": 18.8,
+    "measured": 18.8,
+    "offset": 0.0
+   },
+   {
+    "section": "permissions",
+    "expected": 38.72,
+    "measured": 38.72,
+    "offset": 0.0
+   },
+   {
+    "section": "executions",
+    "expected": 61.6,
+    "measured": 61.6,
+    "offset": 0.0
+   },
+   {
+    "section": "human_approval",
+    "expected": 82.08,
+    "measured": 82.08,
+    "offset": 0.0
+   },
+   {
+    "section": "reciepts_proof",
+    "expected": 101.28,
+    "measured": 101.28,
+    "offset": 0.0
+   },
+   {
+    "section": "change_the_plan",
+    "expected": 125.2,
+    "measured": 125.2,
+    "offset": 0.0
+   },
+   {
+    "section": "bring_your_own_tools",
+    "expected": 143.36,
+    "measured": 143.36,
+    "offset": 0.0
+   },
+   {
+    "section": "team_wfs",
+    "expected": 166.4,
+    "measured": 166.4,
+    "offset": 0.0
+   },
+   {
+    "section": "product_close",
+    "expected": 187.68,
+    "measured": 187.68,
+    "offset": 0.0
+   }
+  ],
+  "checks": {
+   "video runs past the last word by \u22651 s": true,
+   "audio covers all narration": true,
+   "no black frames": true,
+   "every section within \u00b10.05 s of its slot": true,
+   "780x1688 at 30 fps": true
+  }
+ }
+}
