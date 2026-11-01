@@ -16,7 +16,11 @@ export function createActionLog(now = () => Date.now() / 1000) {
       return entry;
     },
     get entries() {
-      return entries.slice();
+      return entries.map((e) => ({ ...e }));
+    },
+    /** Swaps in annotated copies of the entries (e.g. with how much each tap changed the screen). */
+    replace(next) {
+      entries = next.map((e) => ({ ...e }));
     },
   };
 }

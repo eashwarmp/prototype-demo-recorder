@@ -7,6 +7,7 @@ import { tmpdir } from 'node:os';
 import { join } from 'node:path';
 import { test } from 'node:test';
 import { fileURLToPath, pathToFileURL } from 'node:url';
+import { MIN_CHANGE } from '../../src/audit.js';
 import { record } from '../../src/run.js';
 
 const chrome = process.env.CHROME_PATH || '/Applications/Google Chrome.app/Contents/MacOS/Google Chrome';
@@ -33,7 +34,7 @@ test('records in real time and the screen changes at the logged tap times', { sk
       loadSeconds: 0.5,
       output: { width: 300, height: 600 },
       sections: [
-        { name: 'clip', run: async ({ hold, tap }) => { await hold(1.5); await tap(150, 150, 1.5, 'top'); await tap(150, 450, 1.5, 'bottom'); await hold(1); } },
+        { name: 'clip', run: async ({ hold, tap }) => { await hold(1.5); await tap(150, 150, 1.5, 'top'); await tap(150, 450, 1.5, 'bottom'); await tap(-60, 300, 1.2, 'miss'); await hold(1); } },
       ],
     };
     const [result] = await record(config, { outDir: out, log: () => {} });
@@ -45,7 +46,7 @@ test('records in real time and the screen changes at the logged tap times', { sk
 
     // Calibration found the 300×600 frame at 1:1.
     const log = JSON.parse(readFileSync(join(out, 'clip.actions.json'), 'utf8'));
-    const [top, bottom] = log.actions.filter((a) => a.type === 'tap');
+    const [top, bottom, miss] = log.actions.filter((a) => a.type === 'tap');
 
     // Interaction: before each logged tap the old screen, right after it the new one.
     assert.ok(isLight(colorAt(clip, top.t - 0.15)), 'light before the first tap');
@@ -55,6 +56,17 @@ test('records in real time and the screen changes at the logged tap times', { sk
 
     // Missing frames: the still opening second is filled, not skipped, so the first tap isn't early.
     assert.ok(top.t >= 1.5 + 0.6, `first tap logged at ${top.t}s, after the 1.5s hold and the approach`);
+
+    // Audit: real taps changed the screen; a tap on the empty background is flagged as not changing it.
+    assert.ok(top.change > MIN_CHANGE && bottom.change > MIN_CHANGE, `changes ${top.change}, ${bottom.change}`);
+    assert.ok(miss.change < MIN_CHANGE, `miss change ${miss.change}`);
+    assert.deepEqual(result.warnings.length, 1);
+    assert.match(result.warnings[0], /didn't change after tap at .* \(miss\)/);
+    const audit = JSON.parse(readFileSync(join(out, 'audit.json'), 'utf8'));
+    assert.equal(audit.warnings.length, 1);
+    assert.equal(audit.mapping.calibrated, true);
+    assert.ok(Math.abs(audit.mapping.scale - 1) < 0.02, `calibrated scale ${audit.mapping.scale}`);
+    assert.match(audit.environment.chrome, /\d+\./);
   } finally {
     rmSync(out, { recursive: true, force: true });
   }

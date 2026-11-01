@@ -45,6 +45,16 @@ page and finds the bright frame on the dark viewer background. Crops are kept to
 - `tests/e2e/record.test.js` records a local page whose colour changes on tap, then checks the video's colour
   just before and after each logged tap, and that video length equals real time.
 
+## Audit
+
+Every run writes `audit.json`. It holds start and end times; the environment (Chrome, playwright-core, Node and
+ffmpeg versions); the config; the frame mapping, and whether it was calibrated; and per clip the real and video
+length, drift, frame stats (captured, dropped, duplicated, longest gap) and actions. Each tap in
+`NAME.actions.json` carries `change`: the share of pixels that differ strongly (any colour channel over 40/255)
+between the frame just before the press and about a second later, with the cursor dot masked out.
+Warnings: a failed section, drift over one frame, or a tap with `change` under 0.1%. `--debug` also keeps
+each section's raw frame timestamps (`NAME.frames.json`).
+
 ## Limits
 
 - Coordinates are hand-picked per prototype. Finding hotspots automatically is future work.

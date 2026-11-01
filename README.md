@@ -12,6 +12,8 @@ for an editor (or another tool) to line up with voice-over.
   on each tap.
 - **Verifiable.** `pdr verify` makes contact sheets and before/after strips for every logged tap, so you can
   check that every click landed without watching every clip.
+- **Audited.** Every run writes `audit.json`: tool versions, the frame mapping, per-clip drift and frame stats,
+  how much of the screen each tap changed, and warnings. `pdr audit` prints it.
 
 Status: works end to end on one real Figma prototype (the Flow demo, 15 clips). Not yet proven on other prototypes.
 
@@ -33,7 +35,13 @@ npm run test:e2e             # records a tiny local page in real Chrome
 npx pdr record examples/figma-flow/lead-journey.config.mjs --out out/flow
 npx pdr record my.config.mjs --out out/take2 --only 04_execution     # re-take one section
 npx pdr verify out/flow                                              # contact sheets + tap strips
+npx pdr audit out/flow                                               # versions, drift, warnings (exit 1 if any)
+npx pdr record my.config.mjs --out out/dbg --debug                   # also keep raw frame timestamps
 ```
+
+`audit` warns when a section failed, when video length drifts from real time by more than one frame, or when
+the screen didn't change after a tap (under 0.1% of pixels, cursor masked). That last one usually means the tap
+missed or an invisible layer swallowed it. On the Flow prototype, real taps changed 3.5–57% of the screen.
 
 Each section produces `NAME.mp4` (H.264, no audio) and `NAME.actions.json`:
 
@@ -70,6 +78,7 @@ src/recorder/    Chrome screencast capture with per-frame timestamps
 src/timeline/    resampling to an exact constant frame rate, action log
 src/renderer/    ffmpeg encode (crop, scale, H.264)
 src/verify/      contact sheets and before/after tap strips
+src/audit.js     per-tap screen change, drift and failure warnings, environment
 src/run.js       records a config's sections;  src/cli.js  the `pdr` command
 examples/figma-flow/   the Flow demo config, Figma link tracer and overlay fixer
 tests/           timing, missing frames, mapping, actions; tests/e2e records a local page
