@@ -17,6 +17,9 @@ for an editor (or another tool) to line up with voice-over.
 
 Status: works end to end on one real Figma prototype (the Flow demo, 15 clips). Not yet proven on other prototypes.
 
+Sibling project: [Closer](https://github.com/eashwarmp/closer) gives the demo live. It's an AI sales engineer that talks to the
+buyer, drives the real app in a browser, and recovers when they interrupt.
+
 ## Install
 
 Needs Node 20+, Google Chrome (or any Chromium) and `ffmpeg`/`ffprobe` on your PATH.
